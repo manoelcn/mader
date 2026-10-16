@@ -30,7 +30,7 @@ dev = [
 
 [tool.ruff]
 line-length = 79
-extend-exclude = ['migrations']
+extend-exclude = ['migrations', 'tests/test_sanitization.py']
 
 [tool.ruff.lint]
 preview = true
@@ -47,7 +47,7 @@ pythonpath = ['.']
 addopts = ['-p', 'no:warnings', '--cov=mader', '--cov-context=test']
 
 [tool.typos.files]
-extend-exclude = ["*.md", "migrations"]
+extend-exclude = ["*.md", "migrations", "tests/test_sanitization.py"]
 
 [tool.poe] 
 poetry_command = ""
